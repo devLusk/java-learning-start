@@ -19,5 +19,7 @@ public class GettingName {
         for (int i = 0; i < names.length; i++) {
             System.out.println((i + 1) + " name: " + names[i]);
         }
+
+        scr.close();
     }
 }

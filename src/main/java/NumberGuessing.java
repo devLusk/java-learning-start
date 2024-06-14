@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class NumberGuessing {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scr = new Scanner(System.in);
         Random random = new Random();
 
         System.out.print("Enter the range for the number (10 for 1 to 10): ");
-        int numberRange = scanner.nextInt();
+        int numberRange = scr.nextInt();
 
         int targetNumber = random.nextInt(numberRange) + 1;
 
@@ -16,7 +16,7 @@ public class NumberGuessing {
         int attempts = 0;
         while (true) {
             System.out.print("Guess a number: ");
-            int guessedNumber = scanner.nextInt();
+            int guessedNumber = scr.nextInt();
             attempts++;
 
             if (guessedNumber > targetNumber) {
@@ -30,6 +30,6 @@ public class NumberGuessing {
             }
         }
 
-        scanner.close();
+        scr.close();
     }
 }
